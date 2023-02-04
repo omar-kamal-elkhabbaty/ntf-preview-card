@@ -1,0 +1,82 @@
+*{
+    font-family: 'Outfit', sans-serif;
+    color: #FFF
+}
+body{
+    height: 100vh;
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Elements' style*/
+.card{
+    width: 350px;
+    padding: 25px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 10px;
+}
+.card > img{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+h1{
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+.card > p{
+    font-size: 18px;
+    color: #bababa;
+    margin-bottom: 25px;
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+    position: relative;
+}
+.icons div{
+    position: relative;
+    padding-left: 24px;
+}
+.icons img{
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.icons :first-child span{
+    color: hsl(178, 100%, 50%);
+}
+.icons::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    height: 1px;
+    background-color: hsl(215, 32%, 27%);
+}
+.profile{
+    display: flex;
+    align-items: center;
+}
+.profile img{
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #FFF;
+    margin-right: 10px;
+}
+.profile p{
+    color: #bababa;
+}
+@media(max-width: 700px){
+    .card{
+        transform: scale(0.7, 0.7);
+    }
+}
